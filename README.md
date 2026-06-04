@@ -8,45 +8,53 @@ Imagine que a página principal (home-page) mostre uma visão dos vários itens 
 
 - Nome: Marina Borges Bonomo de Matos
 - Matrícula: 1638578
-- Descreva brevemente seu projeto: Site institucional da empresa BIOTERRA voltada para soluções agrícolas utilizando drones.
+- Descreva brevemente seu projeto: Site de turismo voltado para recomendações de becos.
 
 ## Prints do trabalho
 
 <<   IMAGEM - HOME-PAGE -  >>
-![IMAGEM](/public/img/paginahome.png)
+![IMAGEM](/public/img/home.png)
 
 <<   IMAGEM - TELA DE DETALHES -  >>
-![IMAGEM](/public/img/paginadetalhes.png)
+![IMAGEM](/public/img/detalhes.png)
 
 ## Dados em JSON
 Inclua abaixo a estrutura de dados definida para o seu projeto, apresentando pelo menos dois exemplos de registros em formato JSON.
 
 ```json
-{
 const dados = {
-    servicos: [
-        {
-            id: 1,
-            titulo: "Pulverização Inteligente",
-            descricao: "Aplicação precisa com redução de custo e máximo rendimento",
-            conteudo: {
-                nome: "Pulverização Inteligente",
-                descricaoCurta: "Precisão Cirúrgica",
-                descricaoCompleta: "O DJI T25 se destaca pela uniformidade e pelo controle de deriva. Ele vem equipado com um sistema de pulverização atomizada por bicos centrífugos duplos, o que garante que as gotas sejam aplicadas no tamanho exato e correto para cada tipo de cultura. O fluxo é ajustado de forma inteligente em tempo real e, graças ao sistema de radar de matriz de fase ativa combinada com a visão binocular, o drone copia o relevo do terreno com precisão milimétrica. Isso garante a dose correta da ponta à raiz, minimizando drasticamente a deriva (o desperdício do produto carregado pelo vento), mesmo em áreas de declive ou formatos irregulares.",
-                imagem: "img/img04.jpg",
-                banner: "img/img08.jpg",
-                categoria: "Tecnologia"
-            }
-        }
-    ],
-     metricas: {
-        cobertura: "40ha/dia",
-        precisao: "98%",
-        economia: "30%",
-        velocidade: "15km/h"
+    becos: [
+    {
+      id: 1,
+      nome: "Beco do Batman",
+      cidade: "São Paulo, SP",
+      descricao: "Um dos pontos mais icônicos de street art do Brasil. O beco vive mudando com novos grafites.",
+      imagem: 'img/batam.jpg',
+      imagens:[
+        'img/batam(1).jpg',
+        'img/batam(2).png',
+        'img/batam(3).jpg'
+      ],
+      ano: 2010,
+      destaque: "Arte Urbana"
     },
+    {
+      id: 2,
+      nome: "Beco das Garrafas",
+      cidade: "Rio de Janeiro, RJ",
+      descricao: "Berço da Bossa Nova. Lugar onde grandes nomes da música brasileira começaram.",
+      imagem: 'img/Beco-das-Garrafas.jpg',
+      imagens:[
+        'img/beco-das-garrafas (1).jpg',
+        'img/beco-das-garrafas(2).jpg',
+        'img/beco-das-garrafas(3).jpg'
+      ],
+      ano: 1950,
+      destaque: "Histórico / Musical"
+    }
 }
 }
 ```
+
 
 

@@ -1,266 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
-    <link rel="shortcut icon" href="img/Logo01.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Bio terra</title>
-</head>
-  
-<body>
 
-    <header class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <title>Becos & Bocados</title>
+</head>
+<body>
+    <header>
         <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#"> 
-                <img src="img/Logo01.png" width="45" alt="Logo">BIOTERRA
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="btn-orcamento" href="#final">Fazer orçamento</a></li>
-                </ul>
-            </nav>
+            <div class="nav">
+                <h1>Becos & Bocados</h1>
+                <nav>
+                    <a href="#" class="active">Início</a>
+                    <a href="#">Explorar</a>
+                    <a href="#">Sobre</a>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main>   
-        <!-- carrosel -->
-        <section id="hero" class="section-destaques">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Os caminhos mais <span class="highlight">escondidos</span> do mundo</h2>
+            <p>Descubra becos cheios de história, arte e alma urbana</p>
+            <a href="#todos" class="btn-primary">Explorar Becos</a>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <!-- Carrossel em Destaque -->
+        <section class="featured-section">
+            <h2 class="section-title">Em Destaque</h2>
+            <div class="carousel" id="featured-carousel">
+                <button class="carousel-btn prev" id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track" id="carousel-track">
+                    <!-- Preenchido via JavaScript -->
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/img08.jpg" class="d-block w-100" alt="img1home">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>TECNOLOGIA QUE TRANSFORMA O <span>AGRONEÓCIO</span></h5>
-                            <p>Monitoramento inteligente e pulverização de precisão com drones agrícolas.</p>
-                            <a href="#servicos" class="btn btn-outline-light px-4 py-2">Saiba Mais</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/img03.jpg" class="d-block w-100" alt="img2home">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>TECNOLOGIA AGRÍCOLA INTELIGENTE</h5>
-                            <p>O futuro do agronegócio começa no céu</p>
-                            <a href="#servicos" class="btn btn-outline-light px-4 py-2">Saiba Mais</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/img01.jpg" class="d-block w-100" alt="img3home">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>SOLUÇÕES INTEGRADAS</h5>
-                            <p>Soluções inteligentes, análise aérea e monitoramento de lavouras para aumentar a produtividade.</p>
-                            <a href="#servicos" class="btn btn-outline-light px-4 py-2">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <button class="carousel-btn next" id="next-btn"><i class="fas fa-chevron-right"></i></button>
             </div>
         </section>
 
-        <!-- metricas -->
-        <section class="metrics-section">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="metric-card">
-                            <div class="metric-icon">
-                                <svg width="52" height="52" viewBox="0 0 24 24" fill="none">
-                                    <circle cx="12" cy="12" r="7" stroke="#22C55E" stroke-width="1.5"/>
-                                    <circle cx="12" cy="12" r="3" fill="#22C55E"/>
-                                    <path d="M12 2V5" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round"/>
-                                    <path d="M12 19V22" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                            </div>
-                            <h2>40ha/dia</h2>
-                            <p>Cobertura média</p>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-6 col-lg-3">
-                        <div class="metric-card">
-                            <div class="metric-icon">
-                                <svg width="52" height="52" viewBox="0 0 24 24" fill="none">
-                                    <circle cx="12" cy="12" r="8" stroke="#22C55E" stroke-width="1.5"/>
-                                    <circle cx="12" cy="12" r="3" fill="#22C55E"/>
-                                    <path d="M12 2V5" stroke="#22C55E" stroke-width="1.5"/>
-                                    <path d="M12 19V22" stroke="#22C55E" stroke-width="1.5"/>
-                                    <path d="M2 12H5" stroke="#22C55E" stroke-width="1.5"/>
-                                    <path d="M19 12H22" stroke="#22C55E" stroke-width="1.5"/>
-                                </svg>
-                            </div>
-                            <h2>98%</h2>
-                            <p>Precisão nas aplicações</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <div class="metric-card">
-                            <div class="metric-icon">
-                                <svg width="52" height="52" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 15C6 10 10 6 18 6C18 14 14 18 9 18" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M8 16L12 12" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round"/>
-                                    <path d="M4 20H20" stroke="#22C55E" stroke-width="1.5"/>
-                                </svg>
-                            </div>
-                            <h2>30%</h2>
-                            <p>Economia de insumos</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <div class="metric-card">
-                            <div class="metric-icon">
-                                <svg width="52" height="52" viewBox="0 0 24 24" fill="none">
-                                    <path d="M4 12H18" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round"/>
-                                    <path d="M14 8L20 12L14 16" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M4 7H10" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-                                    <path d="M4 17H8" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-                                </svg>
-                            </div>
-                            <h2>36 km/h</h2>
-                            <p>Velocidade operacional</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Todos os Becos -->
+        <section class="all-becos" id="todos">
+            <h2 class="section-title">Todos os Becos</h2>
+            <div class="becos-grid" id="becos-container">
+                <!-- Cards gerados via JavaScript -->
             </div>
         </section>
-
-        <section id="sobre" class="section-spacing">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>SOBRE NÓS</h2>
-                </div>
-                <div class="row g-4 text-center">
-                    <p class="fs-5 ">
-                        A BIOTERRA nasceu com o objetivo de transformar o agronegócio por meio da tecnologia e da inovação sustentável. Utilizando drones agrícolas de alta performance, sensores inteligentes e análise de dados em tempo real, oferecemos soluções que aumentam a produtividade, reduzem desperdícios e promovem uma agricultura mais eficiente e sustentável.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre-servico" class="section-spacing">
-            <div class="container">
-                <div class="card-service">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-lg-5">
-                            <img src="img/img02.jpg" class="img-service w-100" alt="Drone agrícola">
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="card-body-custom p-4">
-                                <span class="tag-service text-success fw-bold">TECNOLOGIA DE PONTA</span>
-                                <h2 class="my-2">Sobre o serviço</h2>
-                                <p class="description">
-                                    A pulverização inteligente com drones utiliza tecnologia avançada para garantir aplicações precisas, uniformes e seguras. Os drones são equipados com sensores de última geração e navegação RTK, proporcionando maior eficiência operacional e menor impacto ambiental.
-                                </p>                      
-                                <div class="service-list row g-2 mt-3">
-                                    <div class="service-item col-md-6">Drones DJI Agras T25 e T40</div>
-                                    <div class="service-item col-md-6">Navegação RTK de alta precisão</div>
-                                    <div class="service-item col-md-6">Bicos centrífugos inteligentes</div>
-                                    <div class="service-item col-md-6">Aplicações em terrenos complexos</div>
-                                    <div class="service-item col-md-6">Redução de até 30% nos insumos</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="servicos" class="section-spacing py-5">
-            <div class="container">
-                <div class="section-title text-center mb-5">
-                    <span class="text-success fw-bold">NOSSOS SERVIÇOS</span>
-                    <h2 class="mt-2">Soluções inteligentes para o campo</h2>
-                </div>
-                <div class="row g-4" id="servicos-container"></div>
-            </div>
-        </section>
-
-        <section id="final" class="py-5 class="container-grid">
-            <div class="item">
-                <h4>BIOTERRA</h4>
-                <p>Soluções tecnológicas que impulsionam o agronegócio de froma sustentável e eficiente</p>
-            </div>
-
-            <div class="item">
-                <h2>Contato</h2>
-                <p>Entre em contato para saber mais.</p>
-                <ul>
-                    <li>Whatsapp: (73) 11111-1111</li>
-                    <li>Email: contato@bioterra.com</li>
-                    <li>Instagram:<a href="https://www.instagram.com/bioterra.agricola/" class="text-dark text-decoration-none  text-success-emphasis" target="_blank"> bioterra.agricola</a></li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <h4>LINKS</h4>
-                <ul>
-                    <li><a href="#home" class="text-decoration-none text-success">Home</a></li>
-                    <li><a href="#sobre" class="text-decoration-none text-success">Sobre</a></li>
-                    <li><a href="#servicos" class="text-decoration-none text-success">Serviços</a>
-                    <li><a href="#contato" class="text-decoration-none text-success">Fazer Orçamento</a></li>
-                </ul>
-            </div>
-        </section>
-
     </main>
 
-    <footer id="final" class="mt-5">
-
-    <div class="footer-box">
-        <h3>BIOTERRA</h3>
-        <p>
-            Uma iniciativa de soluções tecnológicas para agricultura inteligente e sustentável. Informar o cliente como trabalhamos e certificar-se de que está confiando em um trabalho de alta qualidade.
-        </p>
-    </div>
-
-    <div class="footer-box">
-        <h3>Sobre a autora</h3>
-
-        <div class="perfil-aluno">
-            <img src="img/foto-perfil.jpg" alt="Foto da autora">
-
-            <div>
-                <p><strong>Nome:</strong> Marina Borges Bonomo de Matos</p>
-                <p><strong>Curso:</strong> ADS</p>
-                <p><strong>Turno:</strong> Noite</p>
-            </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Becos & Vielas — Explorando o invisível.</p>
         </div>
-    </div>
+    </footer>
 
-    <div class="footer-box">
-        <h3>Redes sociais</h3>
-
-        <ul>
-            <li>Instagram <a href="https://www.instagram.com/mrissx_/" target="_blank" class="text-decoration-none text-success">mrissx_</a></li>
-            <li>LinkedIn  <a href="https://www.linkedin.com/in/marina-b-aa87bb3b3/" target="_blank" class="text-decoration-none text-success">Marina Bonomo</a></li>
-        </ul>
-    </div>
-
-</footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

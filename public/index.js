@@ -1,142 +1,255 @@
 const dados = {
-    servicos: [
-        {
-            id: 1,
-            titulo: "Pulverização Inteligente",
-            descricao: "Aplicação precisa com redução de custo e máximo rendimento",
-            conteudo: {
-                nome: "Pulverização Inteligente",
-                descricaoCurta: "Precisão Cirúrgica",
-                descricaoCompleta: "O DJI T25 se destaca pela uniformidade e pelo controle de deriva. Ele vem equipado com um sistema de pulverização atomizada por bicos centrífugos duplos, o que garante que as gotas sejam aplicadas no tamanho exato e correto para cada tipo de cultura. O fluxo é ajustado de forma inteligente em tempo real e, graças ao sistema de radar de matriz de fase ativa combinada com a visão binocular, o drone copia o relevo do terreno com precisão milimétrica. Isso garante a dose correta da ponta à raiz, minimizando drasticamente a deriva (o desperdício do produto carregado pelo vento), mesmo em áreas de declive ou formatos irregulares.",
-                imagem: "img/img04.jpg",
-                banner: "img/img08.jpg",
-                categoria: "Tecnologia"
-            }
-        },
-        {
-            id: 2,
-            titulo: "Monitoramento de Lavouras",
-            descricao: "Acompanhe a saúde de sua lavoura em tempo real com Tecnologia avançada",
-            conteudo: {
-                nome: "Monitoramento de Lavouras",
-                descricaoCurta: "Agilidade no Campo",
-                descricaoCompleta: "Em termos de rendimento, o T25 impressiona pelo tamanho. Ele consegue cobrir até 12 hectares por hora em operações de pulverização (e cerca de 2,4 toneladas por hora em distribuição de sólidos/grânulos). O tempo de voo por bateria gira em torno de 10 a 12 minutos com o tanque cheio (20 litros para líquidos ou 25 kg para sólidos). O grande segredo operacional: O ciclo de carregamento da bateria com o gerador inteligente EFI leva apenas de 9 a 11 minutos. Isso significa que, operando com duas baterias, você consegue trabalhar de forma contínua (enquanto uma voa, a outra carrega).",
-                imagem: "img/img06.jpg",
-                banner: "img/img03.jpg",
-                categoria: "Operação"
-            }
-        },
-        {
-            id: 3,
-            titulo: "Terceirização de Serviço",
-            descricao: "Melhor qualidade de trabalho para todos envolvidos",
-            conteudo: {
-                nome: "Terceirização de Serviço",
-                descricaoCurta: "Retorno do Investimento",
-                descricaoCompleta: "O investimento em um T25 se paga focado em dois pilares: economia de insumos e eliminação do amassamento de safra. Como a aplicação é localizada e ultraprecisa, há uma redução considerável no uso de defensivos e água. Para prestadores de serviço ou produtores de médio porte, o Retorno sobre o Investimento (ROI) costuma acontecer de forma rápida, pois o custo operacional por hectare é muito menor.",
-                imagem: "img/img07.jpg",
-                banner: "img/img01.jpg",
-                categoria: "Financeiro"
-            }
-        },
-        {
-            id: 4,
-            titulo: "Mapeamento Aéreo",
-            descricao: "Mapas com alta precisão para melhor tomada de decisão",
-            conteudo: {
-                nome: "Mapeamento Aéreo",
-                descricaoCurta: "Sustentabilidade Prática",
-                descricaoCompleta: "No aspecto ecológico, o T25 cumpre um papel fundamental de mitigação de danos. A tecnologia de bicos centrífugos e o mapeamento de alta precisão reduzem o desperdício de produto químico que evaporaria ou escorreria para o solo de forma desnecessária. Como a deriva é controlada, o risco de contaminação fora da área alvo cai drasticamente. Além disso, por ser um equipamento 100% elétrico, ele elimina as emissões diretas de carbono na lavoura. Gere mapas NDVI, NDRE e de vegetação em alta resolução. Identifique zonas de manejo variável e tome decisões baseadas em dados reais da lavoura.",
-                imagem: "img/img05.jpg",
-                banner: "img/img09.jpg",
-                categoria: "Ambiental"
-            }
-        },
-        {
-            id: 5,
-            titulo: "Análise de Dados",
-            descricao: "Dados inteligentes que geram insights e aumentam sua produtividade",
-            conteudo: {
-                nome: "Análise de Dados",
-                descricaoCurta: "Insights Inteligentes",
-                descricaoCompleta: "O DJI T25 foi desenhado para manter o produtor longe de dores de cabeça jurídicas. Como ele possui um peso máximo de decolagem inferior a 150 kg (ele pesa cerca de 25,7 kg sem bateria), ele se enquadra na categoria de Drones Classe 3 da ANAC. Isso facilita muito o processo de registro (SISANT) e os planos de voo no DECEA (SARPAS). Além disso, os sistemas de segurança integrados garantem que a operação cumpra rigidamente os requisitos do MAPA.",
-                imagem: "img/img10.jpg",
-                banner: "img/img02.jpg",
-                categoria: "Tecnologia"
-            }
-        },
-        {
-            id: 6,
-            titulo: "Distribuição de Sólidos",
-            descricao: "Aplicação uniforme de fertilizantes e sementes com precisão",
-            conteudo: {
-                nome: "Distribuição de Sólidos",
-                descricaoCurta: "Eficiência em Granulados",
-                descricaoCompleta: "Distribuição precisa de fertilizantes, sementes e defensivos granulados com capacidade de 25 kg por voo. Controle total de taxa de aplicação por zona.",
-                imagem: "img/img11.jpg",
-                banner: "img/img04.jpg",
-                categoria: "Operação"
-            }
-        }
-    ],
-
-    metricas: {
-        cobertura: "40ha/dia",
-        precisao: "98%",
-        economia: "30%",
-        velocidade: "15km/h"
+    becos: [
+    {
+      id: 1,
+      nome: "Beco do Batman",
+      cidade: "São Paulo, SP",
+      descricao: "Um dos pontos mais icônicos de street art do Brasil. O beco vive mudando com novos grafites.",
+      imagem: 'img/batam.jpg',
+      imagens:[
+        'img/batam(1).jpg',
+        'img/batam(2).png',
+        'img/batam(3).jpg'
+      ],
+      ano: 2010,
+      destaque: "Arte Urbana"
     },
-};
+    {
+      id: 2,
+      nome: "Beco das Garrafas",
+      cidade: "Rio de Janeiro, RJ",
+      descricao: "Berço da Bossa Nova. Lugar onde grandes nomes da música brasileira começaram.",
+      imagem: 'img/Beco-das-Garrafas.jpg',
+      imagens:[
+        'img/beco-das-garrafas (1).jpg',
+        'img/beco-das-garrafas(2).jpg',
+        'img/beco-das-garrafas(3).jpg'
+      ],
+      ano: 1950,
+      destaque: "Histórico / Musical"
+    },
+    {
+      id: 3,
+      nome: "Callejón del Beso",
+      cidade: "Guanajuato, México",
+      descricao: "Um dos becos mais estreitos e românticos do mundo, com uma bela lenda.",
+      imagem: 'img/beso.jpg',
+      imagens:[
+        'img/beso(1).jpg',
+        'img/beso(2).jpg',
+        'img/beso(3).jpg'
+      ],
+      ano: 1700,
+      destaque: "Romântico"
+    },
+    {
+      id: 4,
+      nome: "Beco Catarina Mina",
+      cidade: "São Luís, MA",
+      descricao: "Um dos becos mais charmosos do centro histórico de São Luís, com casarões coloniais azulejados e uma atmosfera única.",
+      imagem: 'img/luis.jpg',
+      imagens: [
+       'img/luis(1).jpg',
+       'img/luis(2).jpg',
+       'img/luis(3).jpg'
+      ],
+      ano: "1800",
+      destaque: "Colonial"
+    },
+    {
+      id: 5,
+      nome: "Golden Gai",
+      cidade: "Tóquio, Japão",
+      descricao: "Uma rede de vielas estreitas com mais de 200 bares minúsculos. Um dos lugares mais autênticos e vibrantes de Shinjuku.",
+      imagem: 'img/dai.jpg',
+      imagens: [
+        'img/dai(1).jpg',
+        'img/dai(2).jpg',
+        'img/dai(3).jpg'
+      ],
+      "ano": "1950",
+      "destaque": "Noite e Cultura"
+    },
+    {
+    id: 6,
+    nome: "Rua do Amendoim",
+    cidade: "Salvador, BA",
+    descricao: "Uma estreita passagem histórica cercada por casarões coloniais e manifestações culturais do Pelourinho.",
+    imagem: "img/amendoim.jpg",
+    imagens: [
+        'img/amendoim(1).jpg',
+        'img/amendoim(2).jpg',
+        'img/amendoim(3).jpg'
+    ],
+    ano: 1800,
+    destaque: "Cultura Baiana"
+    },
+    {
+    id: 7,
+    nome: "Fan Tan Alley",
+    cidade: "Victoria, Canadá",
+    descricao: "Considerado um dos becos mais estreitos da América do Norte, repleto de pequenas lojas e cafés.",
+    imagem: "img/fantan.jpg",
+    imagens: [
+        "img/fantan(1).jpg",
+        "img/fantan(2).jpg",
+        "img/fantan(3).jpg"
+    ],
+    ano: 1880,
+    destaque: "Turístico"
+    },
+    {
+    id: 8,
+    nome: "Hosier Lane",
+    cidade: "Melbourne, Austrália",
+    descricao: "Famoso por seus murais e grafites, é um dos maiores símbolos da arte urbana australiana.",
+    imagem: "img/hosier.jpg",
+    imagens: [
+        "img/hosier(1).jpg",
+        "img/hosier(2).jpg",
+        "img/hosier(3).jpg"
+    ],
+    ano: 1990,
+    destaque: "Street Art"
+    },
+    {
+    id: 9,
+    nome: "Beco da Codorna",
+    cidade: "Goiânia, GO",
+    descricao: "Galeria a céu aberto que reúne artistas urbanos e coloridos murais de grafite.",
+    imagem: "img/codorna.jpg",
+    imagens: [
+        "img/codorna(1).jpg",
+        "img/codorna(2).jpg",
+        "img/codorna(3).jpg"
+    ],
+    ano: 2015,
+    destaque: "Arte Urbana"
+    },
+    {
+    id: 10,
+    nome: "The Shambles",
+    cidade: "York, Inglaterra",
+    descricao: "Rua medieval estreita e preservada que inspirou cenários de fantasia e encanta visitantes.",
+    imagem: "img/shambles.jpg",
+    imagens: [
+        "img/shambles(1).jpg",
+        "img/shambles(2).jpg",
+        "img/shambles(3).jpg"
+    ],
+    ano: 1400,
+    destaque: "Medieval"
+    }
 
-// Renderização dos cards na Home
-const container = document.getElementById("servicos-container");
-if (container) {
-    container.innerHTML = '';
-    dados.servicos.forEach(servico => {
-        const info = servico.conteudo;
-        container.innerHTML += `
-            <div class="col-md-6 col-lg-4 mb-4">
-                <article class="service-card h-100">
-                    <img src="${info.imagem}" alt="${servico.titulo}">
-                    <div class="service-content">
-                        <span>${info.categoria}</span>
-                        <h3>${servico.titulo}</h3>
-                        <p>${servico.descricao}</p>
-                        <a href="detalhes.html?id=${servico.id}" class="btn btn-hero">Ver detalhes</a>
-                    </div>
-                </article>
-            </div>
-        `;
-    });
+    ]
+}
+
+// Carregar dados
+async function carregarDados() {
+    becos = dados.becos
+}
+
+// Criar Card
+function criarCard(beco) {
+    const card = document.createElement('div');
+    card.className = 'card'
+    
+    card.innerHTML = `
+        <img src="${beco.imagem}" alt="${beco.nome}">
+        <div class="card-content">
+            <h3>${beco.nome}</h3>
+            <p class="cidade">${beco.cidade}</p>
+            <p class="destaque">${beco.destaque}</p>
+        </div>
+    `
+
+    card.addEventListener('click', () => {
+        window.location.href = `detalhes.html?id=${beco.id}`
+    })
+
+    return card
 }
 
 // Página de Detalhes
-const params = new URLSearchParams(window.location.search);
-const id = Number(params.get("id"));
+function renderizarDetalhes() {
+    const params = new URLSearchParams(window.location.search)
+    const id = parseInt(params.get('id'))
 
-if (id) {
-    const servicoEncontrado = dados.servicos.find(s => s.id === id);
-    if (servicoEncontrado) {
-        const info = servicoEncontrado.conteudo;
+    const beco = becos.find(b => b.id === id)
+    if (!beco) {
+        document.querySelector('main').innerHTML = `<h2 style="text-align:center; margin-top:100px;">Beco não encontrado </h2>`
+        return
+    }
 
-        // Banner
-        const bannerEl = document.getElementById("banner-detalhe");
-        if (bannerEl) {
-            bannerEl.style.backgroundImage = `linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)), url(${info.banner})`;
-            bannerEl.style.backgroundSize = "cover";
-            bannerEl.style.backgroundPosition = "center";
-        }
-        if(document.getElementById("titulo-servico")) document.getElementById("titulo-servico").textContent = servicoEncontrado.titulo;
-        if(document.getElementById("descricao-servico")) document.getElementById("descricao-servico").textContent = servicoEncontrado.descricao;
-        if(document.getElementById("categoria-servico")) document.getElementById("categoria-servico").textContent = info.categoria;
-        if(document.getElementById("titulo-detalhe")) document.getElementById("titulo-detalhe").textContent = info.nome;
-        if(document.getElementById("texto-detalhe")) document.getElementById("texto-detalhe").textContent = info.descricaoCompleta;
-        if(document.getElementById("imagem-detalhe")) document.getElementById("imagem-detalhe").src = info.imagem;
+    document.title = `${beco.nome} | Becos & Vielas`
+    document.getElementById('beco-imagem').src = beco.imagem
+    document.getElementById('beco-nome').textContent = beco.nome
+    document.getElementById('beco-cidade').textContent = beco.cidade
+    document.getElementById('beco-descricao').textContent = beco.descricao
+    document.getElementById('beco-ano').textContent = beco.ano
+    document.getElementById('beco-destaque').textContent = beco.destaque
 
-        // Métricas
-        if(document.getElementById("metric-cobertura")) document.getElementById("metric-cobertura").textContent = dados.metricas.cobertura;
-        if(document.getElementById("metric-precisao")) document.getElementById("metric-precisao").textContent = dados.metricas.precisao;
-        if(document.getElementById("metric-economia")) document.getElementById("metric-economia").textContent = dados.metricas.economia;
-        if(document.getElementById("metric-velocidade")) document.getElementById("metric-velocidade").textContent = dados.metricas.velocidade;
+    const galeria = document.getElementById('galeria');
 
-        }}
+    if (galeria) {
+        galeria.innerHTML = '';
+
+        beco.imagens.forEach(img => {
+            const imagem = document.createElement('img');
+            imagem.src = img;
+            imagem.alt = beco.nome;
+            galeria.appendChild(imagem);
+        });
+    }
+
+    // Sugestões aleatórias 
+    const sugestoesContainer = document.getElementById('sugestoes-container')
+    sugestoesContainer.innerHTML = ''
+
+    const outros = becos.filter(b => b.id !== id);
+    const aleatorios = outros.sort(() => Math.random() - 0.5).slice(0, 3)
+
+    aleatorios.forEach(beco => {
+        sugestoesContainer.appendChild(criarCard(beco))
+    })
+}
+
+// Renderizar Carrossel e Grid
+function renderizarCarrossel() {
+    const track = document.getElementById('carousel-track')
+    if (!track) return
+    track.innerHTML = ''
+    becos.slice(0, 6).forEach(beco => track.appendChild(criarCard(beco)))
+}
+
+function renderizarGrid() {
+    const container = document.getElementById('becos-container')
+    if (!container) return
+    container.innerHTML = ''
+    becos.forEach(beco => container.appendChild(criarCard(beco)))
+}
+
+function configurarCarrossel() {
+    const track = document.getElementById('carousel-track')
+    const prevBtn = document.getElementById('prev-btn')
+    const nextBtn = document.getElementById('next-btn')
+
+    if (!track || !prevBtn || !nextBtn) return
+
+    const scrollAmount = 340
+    prevBtn.addEventListener('click', () => track.scrollBy({ left: -scrollAmount, behavior: 'smooth' }))
+    nextBtn.addEventListener('click', () => track.scrollBy({ left: scrollAmount, behavior: 'smooth' }))
+}
+
+// Inicialização
+document.addEventListener('DOMContentLoaded', async () => {
+    await carregarDados()
+
+    if (window.location.pathname.includes('detalhes.html')) {
+        renderizarDetalhes()
+    } else {
+        renderizarCarrossel()
+        renderizarGrid()
+        configurarCarrossel()
+    }
+})
