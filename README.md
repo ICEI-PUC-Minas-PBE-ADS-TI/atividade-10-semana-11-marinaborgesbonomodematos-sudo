@@ -32,9 +32,9 @@ Inclua abaixo a estrutura de dados definida para o seu projeto, apresentando pel
       "descricao": "Um dos pontos mais icônicos de street art do Brasil. O beco vive mudando com novos grafites.",
       "imagem": "assets/images/beco-batman.jpg",
       "imagens":[
-        'img/batam(1).jpg',
-        'img/batam(2).png',
-        'img/batam(3).jpg'
+        "img/batam(1).jpg",
+        "img/batam(2).png",
+        "img/batam(3).jpg"
       ],
       "ano": "2010",
       "destaque": "Arte Urbana"
@@ -46,14 +46,13 @@ Inclua abaixo a estrutura de dados definida para o seu projeto, apresentando pel
       "descricao": "Berço da Bossa Nova. Lugar onde grandes nomes da música brasileira começaram.",
       "imagem": "assets/images/beco-garrafas.jpg",
       "imagens":[
-        'img/beco-das-garrafas (1).jpg',
-        'img/beco-das-garrafas(2).jpg',
-        'img/beco-das-garrafas(3).jpg'
+        "img/beco-das-garrafas (1).jpg",
+        "img/beco-das-garrafas(2).jpg",
+        "img/beco-das-garrafas(3).jpg"
       ],
       "ano": "1950",
       "destaque": "Histórico / Musical"
     },
-}
 }
 ```
 
